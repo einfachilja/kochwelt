@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html id="index-html" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="shortcut icon" href="./img/logo_small.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="includeHTML()">
+    <div w3-include-html="header.html"></div>
+
+    <section class="section-contact">
+        <div class="section-contact-container">
+            <h3>Kontaktiere uns</h3>
+            <form class="form-contant" onsubmit="sendMail(event)">
+                <label for="name">Dein Name</label>
+                <input type="text" id="name" name="Name" required>
+                <label for="mail">Deine E-Mail:</label>
+                <input type="email" id="mail" name="E-Mail" required>
+                <label for="message">Deine Nachricht:</label>
+                <textarea name="Nachricht" id="message" required></textarea>
+                <input class="button contact-btn" type="submit" value="Abschicken">
+            </form>
+        </div>
+    </section>
+
+    <div w3-include-html="footer.html"></div>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html id="index-html" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="shortcut icon" href="./img/logo_small.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="includeHTML()">
+
+    <div w3-include-html="header.html"></div>
+
+    <section class="section-aot max-width-1440">
+        <a href="schaschlikspiesse.html"><img class="section-aot-img" src="./img/schaschlikspiesse.jpg" alt=""></a>
+        <div>
+            <h2>Schaschlikspieße</h2>
+            <p>Schmackhafte Croissants können auch zu Hause sehr einfach gebacken werden. Mit ca. 30 Minuten Aufwand
+                kannst du ein wundervolles
+                Frühstück zaubern.</p>
+            <a href="schaschlikspiesse.html" class="button">Rezept öffnen</a>
+        </div>
+    </section>
+
+    <section class="section-recipe">
+        <div class="max-width-1440">
+            <h2>Lust auf was Neues?</h2>
+            <div class="container-recipe">
+                <div class="box-recipe">
+                    <a href="grillhaehnchen.html"><img class="box-recipe-img" src="./img/grillhaehnchen.jpg" alt=""></a>
+                    <h3>Grill-Hähnchen</h3>
+                </div>
+                <div class="box-recipe">
+                    <a href="tagliatelle.html"><img class="box-recipe-img" src="./img/tagliatelle.avif" alt=""></a>
+                    <h3>Tagliatelle in<br>Rosmarin-Buttersauce</h3>
+                </div>
+                <div class="box-recipe">
+                    <a href="flammkuchen.html"><img class="box-recipe-img" src="./img/flammkuchen.jpg" alt=""></a>
+                    <h3>Schneller Flammkuchen</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-suggestion max-width-1440">
+        <h2>Pfanne vs. Wok - Was ist besser?</h2>
+        <div class="container-suggestion">
+            <p>Holzkohle steht für traditionelles Grillen mit intensivem Aroma, offener Flamme und echtem BBQ-Feeling.
+                Wer das Ritual des Anzündens liebt und den rauchigen Geschmack schätzt, greift zur Kohle. <br><br>
+
+                Gasgrills dagegen überzeugen mit Komfort: Sie sind schnell startklar, sauber und bieten eine exakte
+                Temperaturkontrolle – ideal für spontanes und stressfreies Grillen.
+
+                Ob rustikal oder praktisch – am Ende ist es eine Frage des Geschmacks und des Grilltyps.</p>
+            <img class="section-suggestion-img" src="./img/kohle.jpg" alt="">
+        </div>
+    </section>
+
+    <div w3-include-html="footer.html"></div>
+</body>
+
+</html>

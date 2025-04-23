@@ -1,0 +1,475 @@
+@font-face {
+  font-family: "Raleway";
+  src: url(./fonts/Raleway-VariableFont_wght.ttf);
+}
+
+.max-width-1440 {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+section {
+  padding: 40px 160px 40px 160px;
+}
+
+header {
+  padding: 0 160px 0 160px;
+  box-shadow: 0 -4px 8px 2px gray;
+}
+
+.header-container {
+  display: flex;
+  height: 112px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  height: 64px;
+}
+
+nav {
+  gap: 32px;
+  display: flex;
+  align-Self: flex-end;
+  padding-bottom: 5px;
+}
+
+.nav-link {
+  font-size: 18px;
+  color: #403b3b;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #008001;
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 5px;
+}
+
+footer {
+  background-color: #403b3b;
+  padding: 0 160px 0 160px;
+}
+
+.footer-container {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.footer-link {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-link:hover {
+  color: #008001;
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 5px;
+}
+
+.footer-social-img {
+  height: 40px;
+}
+
+.footer-right {
+  display: flex;
+  gap: 16px;
+}
+
+.separator {
+  width: 1px;
+  height: 20px;
+  background-color: white;
+}
+
+.footer-left {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.section-aot-img {
+  height: 240px;
+  border-radius: 8px;
+}
+
+.section-aot-img:hover {
+  opacity: 0.9;
+}
+
+.section-aot {
+  display: flex;
+  gap: 32px;
+}
+
+.button {
+  background-color: #008001;
+  color: white;
+  text-decoration: none;
+  padding: 8px 32px 8px 32px;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+}
+
+.button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.section-recipe {
+  background-color: #efefef;
+  text-align: center;
+}
+
+.container-recipe {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-recipe-img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.box-recipe-img:hover {
+  opacity: 0.9;
+}
+
+.section-suggestion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-suggestion {
+  display: flex;
+  gap: 32px;
+}
+
+.section-suggestion-img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.section-recipe-head-img {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.section-recipe-head-icon {
+  height: 10px;
+}
+
+.icon-container-bg {
+  background-color: #efefef;
+  padding: 4px;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+.section-recipe-head-container {
+  display: flex;
+  gap: 24px;
+  padding: 20px 0 20px 0;
+}
+
+.separator {
+  height: 0.5px;
+  background-color: rgba(128, 128, 128, 0.5);
+  width: 100%;
+  margin: 8px 0 8px 0;
+}
+
+.section-profil-img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.section-profil-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.section-profil-container-name {
+  font-size: 24px;
+}
+
+span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 8px;
+}
+
+tr:nth-child(odd) {
+  background-color: #efefef;
+}
+
+td {
+  padding: 16px;
+  border-radius: 8px;
+}
+
+a {
+  color: #008001;
+}
+
+.section-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.section-contact-container {
+  background-color: #dcdcdc;
+  border-radius: 8px;
+  padding: 24px;
+  width: 50%;
+}
+
+.form-contant {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  height: 200px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  resize: none;
+}
+
+textarea:focus {
+  outline: 2px solid #008001;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+input {
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 8px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  height: 32px;
+}
+
+input:focus {
+  outline: 2px solid #008001;
+}
+
+.container-calculator {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.box-calculator {
+  display: flex;
+}
+
+.input-quantity {
+  font-size: 16px;
+  border: 0.5px solid #008001;
+  margin-bottom: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 80px;
+}
+
+.section-impressum {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-btn {
+  border-radius: 4px;
+  width: 100%;
+}
+
+.send-mail-text {
+  text-align: center;
+}
+
+.d-none {
+  display: none;
+}
+
+.error-quantity {
+  color: #008001;
+  font-weight: 400;
+}
+
+.menu-open-img {
+  height: 32px;
+  cursor: pointer;
+}
+
+.menu-close-img {
+  height: 32px;
+  cursor: pointer;
+}
+
+.menu-mobile {
+  height: 100vh;
+  background-color: white;
+  position: absolute;
+  top: 120px;
+  left: 0;
+  right: 0;
+  padding: 24px;
+}
+
+.menu-mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.menu-mobile-nav a {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+@media (max-width: 990px) {
+  header {
+    padding: 0 20px 0 20px;
+  }
+
+  section {
+    padding: 40px 20px 40px 20px;
+  }
+
+  footer {
+    padding: 0 20px 0 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container-recipe {
+    flex-direction: column;
+  }
+
+  .box-recipe-img {
+    width: 100%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .menu-open-img {
+    display: block;
+  }
+
+  .section-contact-container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 700px) {
+  .menu-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-aot {
+    flex-direction: column;
+  }
+
+  .section-aot-img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .container-suggestion {
+    flex-direction: column;
+  }
+
+  .section-suggestion-img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  h2 {
+    font-size: 18px;
+  }
+
+  .container-calculator {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section-recipe-head-container {
+    justify-content: space-between;
+  }
+
+  h1 {
+    font-size: 23px;
+  }
+}

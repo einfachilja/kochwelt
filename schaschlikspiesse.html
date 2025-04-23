@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html id="index-html" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schaschlikspieße</title>
+    <link rel="shortcut icon" href="./img/logo_small.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="includeHTML(), renderFiltered(1)">
+    <div w3-include-html="header.html"></div>
+
+    <section class="section-recipe-head max-width-1440">
+        <h1>Schaschlikspieße</h1>
+        <img class="section-recipe-head-img" class="" src="./img/schaschlikspiesse.jpg" alt="">
+        <div class="section-recipe-head-container">
+            <span class="icon-container-bg">
+                <img class="section-recipe-head-icon" src="./img/icons/clock-regular.svg" alt="">
+                120 Min.
+            </span>
+            <span class="icon-container-bg">
+                <img class="section-recipe-head-icon" src="./img/icons/brain-solid.svg" alt="">
+                simpel
+            </span>
+            <span class="icon-container-bg">
+                <img class="section-recipe-head-icon" src="./img/icons/clock-regular.svg" alt="">
+                05.04.2025
+            </span>
+        </div>
+    </section>
+
+    <section class="max-width-1440">
+        <div class="separator"></div>
+        <div class="container-calculator">
+            Zutaten für
+            <form class="box-calculator" onsubmit="calculateAndUpdateQuantitie(); return false">
+                <input id="quantity" class="input-quantity" type="number" value="1" min="1" max="10" required>
+                <button type="submit" class="button">Portionen</button>
+            </form>
+        </div>
+        <div>
+            <table>
+                <tbody id="content">
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+    <section class="section-preparation max-width-1440">
+        <h2>Zubereitung</h2>
+        <div class="section-recipe-head-container">
+            <span class="icon-container-bg">
+                <img class="section-recipe-head-icon" src="./img/icons/clock-regular.svg" alt="">
+                ca. 120 Min.
+            </span>
+            <span class="icon-container-bg">
+                <img class="section-recipe-head-icon" src="./img/icons/clock-regular.svg" alt="">
+                Gesamtzeit ca. 1 Tag
+            </span>
+        </div>
+        <p>Basilikum und Petersilie fein schneiden. Den Kefir in einen Behälter geben und mit den fein geschnittenen
+            Kräutern, Pfeffer, Salz, Chilipulver, Knoblauch, Zwiebel, Lorbeerblättern und Wacholderbeeren
+            vermengen.<br><br>
+
+            Das Fleisch in ca. 4 x 4 cm große Würfel schneiden. Anschließend in der Marinade wälzen, die Thymianzweige
+            untermischen und abgedeckt für mindestens zwölf Stunden, besser 24 Stunden, in den Kühlschrank
+            stellen.<br><br>
+
+            Den Grill auf 200 Grad vorheizen.<br><br>
+
+            Die Fleischstücke aus der Marinade entnehmen und auf 3 - 4 Grillspieße stecken. Fleischspieße grillen und
+            alle vier Minuten etwas drehen. Nach ca. 25 - 30 Minuten müssten sie eine leichte Bräune erhalten haben und
+            können vom Grill genommen werden – fertig.<br><br>
+            Viel Spaß beim Nachgrillen.</p>
+    </section>
+
+    <section class="section-profil max-width-1440">
+        <h3>Rezept erstellt von</h3>
+        <div class="section-profil-container">
+            <img class="section-profil-img" src="./img/ilja.png" alt="">
+            <span class="section-profil-container-name">Ilja</span>
+        </div>
+
+    </section>
+
+    <div w3-include-html="footer.html"></div>
+
+</body>
+
+</html>

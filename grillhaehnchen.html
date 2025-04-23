@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html id="index-html" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grill-Hähnchen</title>
+    <link rel="shortcut icon" href="./img/logo_small.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="includeHTML(), renderFiltered(2)">
+    <div w3-include-html="header.html"></div>
+
+    <section class="section-recipe-head max-width-1440">
+        <h1>Grill-Hähnchen</h1>
+        <img class="section-recipe-head-img" class="" src="./img/grillhaehnchen.jpg" alt="">
+        <div class="section-recipe-head-container">
+            <span class="icon-container-bg">
+                <img class="section-recipe-head-icon" src="./img/icons/clock-regular.svg" alt="">
+                6 Min.
+            </span>
+            <span class="icon-container-bg">
+                <img class="section-recipe-head-icon" src="./img/icons/brain-solid.svg" alt="">
+                simpel
+            </span>
+            <span class="icon-container-bg">
+                <img class="section-recipe-head-icon" src="./img/icons/clock-regular.svg" alt="">
+                15.04.2025
+            </span>
+        </div>
+    </section>
+
+    <section class="max-width-1440">
+        <div class="separator"></div>
+        <div class="container-calculator">
+            Zutaten für
+            <form class="box-calculator" onsubmit="calculateAndUpdateQuantitie(); return false">
+                <input id="quantity" class="input-quantity" type="number" value="1" min="1" max="10" required>
+                <button type="submit" class="button">Portionen</button>
+            </form>
+        </div>
+        <div>
+            <table>
+                <tbody id="content">
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+    <section class="section-preparation max-width-1440">
+        <h2>Zubereitung</h2>
+        <div class="section-recipe-head-container">
+            <span class="icon-container-bg">
+                <img class="section-recipe-head-icon" src="./img/icons/clock-regular.svg" alt="">
+                Grillzeit ca. 54 Min.
+            </span>
+            <span class="icon-container-bg">
+                <img class="section-recipe-head-icon" src="./img/icons/clock-regular.svg" alt="">
+                Gesamtzeit ca. 1 Std.
+            </span>
+        </div>
+        <p>Die Gewürze mörsern.<br><br>
+
+            Beim Hähnchen die Haut mit dem Finger vom Fleisch lösen und das Fett an der Öffnung wegschneiden. 1,5 EL vom
+            Gewürz einfüllen, das Huhn schütteln und das Gewürz so im Inneren verteilen. Etwas Gewürz unter die Haut
+            reiben, sodass es in das Fleisch einziehen kann. Das Hähnchen ausreichend von außen komplett mit dem Gewürz
+            einreiben. Die Schenkelenden über kreuz durch einen kleinen Einschnitt auf beiden Seiten der "Öffnung"
+            befestigen und somit "schließen".<br><br>
+
+            Nur den Heckbrenner (Backburner) auf höchster Stufe einschalten und vorheizen. Das Hähnchen auf den
+            Drehspieß spannen und im Grill einsetzen. Nach 40 Minuten alle zehn Minuten mit ein paar wenigen Spritzern
+            Maggi benetzen. Nach ca. 1 Stunde die seitlichen Brenner zuschalten und die Haut zur gewünschten
+            Knusprigkeit bringen.
+    </section>
+
+    <section class="section-profil max-width-1440">
+        <h3>Rezept erstellt von</h3>
+        <div class="section-profil-container">
+            <img class="section-profil-img" src="./img/ilja.png" alt="">
+            <span class="section-profil-container-name">Ilja</span>
+        </div>
+
+    </section>
+
+    <div w3-include-html="footer.html"></div>
+
+</body>
+
+</html>

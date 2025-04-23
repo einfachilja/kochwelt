@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html id="index-html" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tagliatelle in Rosmarin-Buttersauce</title>
+    <link rel="shortcut icon" href="./img/logo_small.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="includeHTML(), renderFiltered(3)">
+    <div w3-include-html="header.html"></div>
+
+    <section class="section-recipe-head max-width-1440">
+        <h1>Tagliatelle in Rosmarin-Buttersauce</h1>
+        <img class="section-recipe-head-img" class="" src="./img/tagliatelle.avif" alt="">
+        <div class="section-recipe-head-container">
+            <span class="icon-container-bg">
+                <img class="section-recipe-head-icon" src="./img/icons/clock-regular.svg" alt="">
+                15 Min.
+            </span>
+            <span class="icon-container-bg">
+                <img class="section-recipe-head-icon" src="./img/icons/brain-solid.svg" alt="">
+                simpel
+            </span>
+            <span class="icon-container-bg">
+                <img class="section-recipe-head-icon" src="./img/icons/clock-regular.svg" alt="">
+                04.04.2025
+            </span>
+        </div>
+    </section>
+
+    <section class="max-width-1440">
+        <div class="separator"></div>
+        <div class="container-calculator">
+            Zutaten für
+            <form class="box-calculator" onsubmit="calculateAndUpdateQuantitie(); return false">
+                <input id="quantity" class="input-quantity" type="number" value="1" min="1" max="10" required>
+                <button type="submit" class="button">Portionen</button>
+            </form>
+        </div>
+        <div>
+            <table>
+                <tbody id="content">
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+    <section class="section-preparation max-width-1440">
+        <h2>Zubereitung</h2>
+        <div class="section-recipe-head-container">
+            <span class="icon-container-bg">
+                <img class="section-recipe-head-icon" src="./img/icons/clock-regular.svg" alt="">
+                ca. 20 Min.
+            </span>
+            <span class="icon-container-bg">
+                <img class="section-recipe-head-icon" src="./img/icons/clock-regular.svg" alt="">
+                Gesamtzeit ca. 20 Min.
+            </span>
+        </div>
+        <p>Parmesan in den Mixtopf geben, 10 Sek./Stufe 9 zerkleinern und umfüllen.<br><br>
+
+            In einem Topf auf dem Herd Tagliatelle nach Packungsangabe in reichlich Salzwasser kochen. In dieser Zeit
+            mit dem Rezept fortfahren.<br><br>
+
+            Rosmarin in den Mixtopf geben, 6 Sek./Stufe 8 zerkleinern und mit dem Spatel nach unten schieben. Butter
+            zugeben und 4 Min./70°C/Stufe 1.5 schmelzen.
+    </section>
+
+    <section class="section-profil max-width-1440">
+        <h3>Rezept erstellt von</h3>
+        <div class="section-profil-container">
+            <img class="section-profil-img" src="./img/ben.png" alt="">
+            <span class="section-profil-container-name">Ben</span>
+        </div>
+
+    </section>
+
+    <div w3-include-html="footer.html"></div>
+
+</body>
+
+</html>
